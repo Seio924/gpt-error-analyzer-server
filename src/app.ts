@@ -13,5 +13,6 @@ export function createApp() {
     })
   );
   app.use(express.json());
+  app.use('/gpt-analyze', gptAnalyzeRouter);
   return app;
 }
